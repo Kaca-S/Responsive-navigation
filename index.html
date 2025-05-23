@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/42f85d5f96.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Test-navbar</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Lodge</div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul id="menuList" class="nav-list">
+            <li><a href="pages/home.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section main-content>
+            <h1 class="main-title">Patagonia</h1>
+            <p class="main-info">Fusce vehicula dolor arcu,
+                sit amet blandit dolor mollis nec.
+                Donec viverra eleifend lacus, vitae ullamcor.</p>
+        </section>
+        <div class="pic-bit"></div>
+    <picture>
+        <source media="(max-width: 320px)" srcset="images/Bitmap-mobile.png">
+        <source media="(max-width: 768px)" srcset="images/Bitmap-tablet.png">
+        <source media="(max-width: 1440px)" srcset="images/Bitmap-desktop.png">
+        <img src="images/Bitmap-desktop.png" alt="Wild horses in the field">
+    </picture>
+
+    </main>
+</body>
+</html>
