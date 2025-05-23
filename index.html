@@ -13,11 +13,16 @@
 </head>
 <body>
     <nav>
+        <div class="menu-overlay"></div>
         <div class="logo">Lodge</div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-button">
-            <i class="fa-solid fa-bars"></i>
-        </label>
+    <i class="fa-solid fa-bars"></i>
+</label><label for="menu-toggle" class="menu-button">
+    <span></span>
+    <span></span>
+    <span></span>
+</label>
         <ul id="menuList" class="nav-list">
             <li><a href="pages/home.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
@@ -32,7 +37,6 @@
                 sit amet blandit dolor mollis nec.
                 Donec viverra eleifend lacus, vitae ullamcor.</p>
         </section>
-        <div class="pic-bit"></div>
     <picture>
         <source media="(max-width: 320px)" srcset="images/Bitmap-mobile.png">
         <source media="(max-width: 768px)" srcset="images/Bitmap-tablet.png">
@@ -41,5 +45,10 @@
     </picture>
 
     </main>
+    <script>
+  document.querySelector('.menu-overlay').addEventListener('click', () => {
+    document.getElementById('menu-toggle').checked = false;
+  });
+</script>
 </body>
 </html>
