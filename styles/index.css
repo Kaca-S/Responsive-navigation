@@ -1,0 +1,125 @@
+body { 
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+    width: 100%;
+    height: 100vh;
+    background-color: aquamarine;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: darkcyan;
+    position: relative;
+}
+.menu-toggle {
+    display: none;
+}
+.menu-button {
+   display: none;
+    cursor: pointer;
+    z-index: 2;
+    color: beige;
+    font-size: 30px;
+}
+.logo {
+    color: beige;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Aldrich", sans-serif;
+}
+.nav-list {
+    display: flex;
+   list-style: none;
+   font-family: "Source Sans 3", sans-serif;
+   font-size: 18px; 
+}
+.nav-list li {
+    list-style: none;
+}
+.nav-list li a {
+    text-decoration: none;
+    color: beige;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.nav-list li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: yellow; 
+}
+  .menu-button .fa-bars {
+    font-size: 24px; 
+    color: beige;
+}
+main {
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;   
+    text-align: center;   
+    margin: 50px 0;      
+}
+.main-content {
+    width: 100%;
+}
+ .main-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    color: rgb(129, 72, 3);
+    line-height: 1.5;
+    margin: 0;
+ }
+ .main-info {
+    font-family: "Source Sans 3", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(129, 72, 3);
+    font-size: 24px;
+    line-height: 1.2;
+ }
+ .image section {
+text-align: center;
+ }
+
+.responsive-image {
+    max-width: 100%;
+    height: auto; /* Make sure the image is responsive */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    .nav-list {
+        display: none; /* Hide nav links by default */
+        position: absolute; /* Dropdown positioning */
+        top: 100%; /* Push it below the navbar */
+        margin: 0;
+        left: 0;
+        right: 0;
+        background-color: darkcyan; /* Menu background color */
+        flex-direction: column; /* Stack links vertically */
+    }
+    .nav-list li {
+        margin: 10px 0;
+    }
+    .menu-toggle:checked + .menu-button + .nav-list {
+        display: flex; /* Show navigation links when checkbox is checked */
+
+    }
+}
+@media screen and (max-width: 320px) {
+    .main-title {
+        font-size: 28px; /* Smaller font size for very small screens */
+    }
+
+    .main-info {
+        font-size: 12px; /* Smaller font size for very small screens */
+    }
+}
+    
