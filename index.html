@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-    <title>Responsive Navigation</title>
+    <title>Test-navbar</title>
 </head>
 <body>
     <nav>
@@ -17,12 +17,10 @@
         <div class="logo">Lodge</div>
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
         <label for="menu-toggle" class="menu-button">
-    <i class="fa-solid fa-bars"></i>
-</label><label for="menu-toggle" class="menu-button">
-    <span></span>
-    <span></span>
-    <span></span>
-</label>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <ul id="menuList" class="nav-list">
             <li><a href="pages/home.html">Home</a></li>
             <li><a href="pages/about.html">About</a></li>
@@ -45,7 +43,8 @@
     </picture>
 
     </main>
-    <script>
+ <script>
+  // Close menu if overlay is clicked
   document.querySelector('.menu-overlay').addEventListener('click', () => {
     document.getElementById('menu-toggle').checked = false;
   });
