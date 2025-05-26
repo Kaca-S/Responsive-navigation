@@ -42,7 +42,7 @@ nav {
     border-radius: 2px;
     transition: 0.3s ease;
 }
-/* Animate to 'X' */
+/* Animate from hamburger to x */
 .menu-toggle:checked + .menu-button span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -74,8 +74,6 @@ nav {
     border-radius: 4px;
     color: yellow; 
 }
-
-/* OVERLAY */
 .menu-overlay {
     position: fixed;
     top: 0;
@@ -88,8 +86,6 @@ nav {
     transition: opacity 0.3s ease;
     z-index: 5;
 }
-
-/* Main content */
 main {
     display: flex;
     flex-direction: column;
@@ -115,7 +111,6 @@ main {
     font-size: 24px;
     line-height: 1.2;
 }
-
 .responsive-image {
     max-width: 100%;
     height: auto;
@@ -131,7 +126,6 @@ main {
         top: 100%;
         left: 50%;
         transform: translateX(-50%) translateY(-10px);
-        width: 90%;
         background-color: darkcyan;
         flex-direction: column;
         align-items: center;
